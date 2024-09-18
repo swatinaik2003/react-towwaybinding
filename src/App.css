@@ -1,0 +1,54 @@
+.form {
+  display: flex;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-left,
+.form-right {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.form-left {
+  border-right: 1px solid #ddd;
+}
+
+.form-right {
+  padding-left: 20px;
+}
+
+.label {
+  margin-bottom: 15px;
+}
+
+.label label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.label input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-right p {
+  padding: 8px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+}

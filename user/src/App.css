@@ -1,0 +1,54 @@
+/* App.css */
+
+/* Container for the entire app */
+.container {
+  text-align: center;
+  padding: 50px;
+  gap:10px
+}
+
+/* Grid container for user cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1000px, 2fr));
+  gap: 50px;
+  padding: 10px;
+}
+
+/* Individual user card */
+.user-card {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* User card hover effect */
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+/* User image */
+.user-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Styling for user names */
+.user-card h2 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Styling for age and email */
+.user-card p {
+  font-size: 1rem;
+  color: #666;
+}

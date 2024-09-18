@@ -1,0 +1,34 @@
+import React, { useState } from "react";
+import "./App.css";
+
+const Form = () => {
+  const [name, setName] = useState("No name");
+  const [age, setAge] = useState("No age");
+
+  function handleNameChange(e) {
+    setName(e.target.value);
+  }
+  function handleAgeChange(e) {
+    setAge(e.target.value);
+  }
+  return (
+    <div className="form">
+      <div className="form-left">
+        <div className="label">
+          <label>Name:</label>
+          <input type="text" onChange={handleNameChange} />
+        </div>
+        <div className="label">
+          <label>Age:</label>
+          <input type="text" onChange={handleAgeChange} />
+        </div>
+      </div>
+      <div className="form-right">
+        <p>Name: {name}</p>
+        <p>Age: {age}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Form;
